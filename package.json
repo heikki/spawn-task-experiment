@@ -12,6 +12,7 @@
     "del": "^1.1.1",
     "gulp": "git://github.com/gulpjs/gulp#4.0",
     "gulp-concat": "^2.4.3",
-    "gulp-sourcemaps": "^1.3.0"
+    "gulp-sourcemaps": "^1.3.0",
+    "worker-farm": "^1.1.0"
   }
 }
