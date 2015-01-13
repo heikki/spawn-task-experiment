@@ -1,0 +1,35 @@
+{
+	"requireCurlyBraces": [ "if", "else", "for", "while", "do", "try", "catch" ],
+	"requireSpaceAfterKeywords": [ "if", "else", "for", "while", "do", "switch", "return", "try" ],
+	"disallowSpaceAfterKeywords": [ "catch" ],
+	"requireSpaceBeforeBlockStatements": true,
+	"requireSpacesInFunction": {
+		"beforeOpeningCurlyBrace": true
+	},
+	"disallowSpacesInFunction": {
+		"beforeOpeningRoundBrace": true
+	},
+	"disallowMultipleVarDecl": true,
+	"requireBlocksOnNewline": 1,
+	"requireSpacesInsideObjectBrackets": "all",
+	"disallowSpacesInsideParentheses": true,
+	"requireSpaceBeforeBinaryOperators": [ "?", "+", "-", "/", "*", "=", "==", "===", "!=", "!==", ">", ">=", "<", "<=" ],
+	"disallowSpaceBeforeBinaryOperators": [ "," ],
+	"requireSpaceAfterBinaryOperators": [ ",", "?", "+", "/", "*", ":", "=", "==", "===", "!=", "!==", ">", ">=", "<", "<=" ],
+	"disallowSpaceAfterPrefixUnaryOperators": true,
+	"disallowSpaceBeforePostfixUnaryOperators": true,
+	"requireSpacesInConditionalExpression": true,
+	"disallowKeywords": [ "with" ],
+	"disallowMultipleLineBreaks": true,
+	"disallowKeywordsOnNewLine": [ "else" ],
+
+	"validateIndentation": "\t",
+	"validateLineBreaks": "LF",
+	"validateQuoteMarks": { "mark": "'", "escape": false },
+	"disallowMixedSpacesAndTabs": true,
+	"disallowTrailingWhitespace": true,
+	"requireLineFeedAtFileEnd": true,
+
+	"excludeFiles": [ "node_modules/**" ],
+	"fileExtensions": [ ".js" ]
+}
