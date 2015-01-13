@@ -4,7 +4,7 @@
 
 Run task in child process:
 
-```
+```js
 var makeItFaster = require('spawn-task-experiment').spawn;
 
 gulp.task('whatever', makeItFaster(function() {
@@ -21,7 +21,7 @@ gulp.task('whatever', makeItFaster(function() {
 
 Run task in worker pool:
 
-```
+```js
 var makeItFaster = require('spawn-task-experiment').workerPool();
 
 gulp.task('whatever', makeItFaster(function() {
