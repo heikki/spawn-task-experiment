@@ -14,6 +14,12 @@
   "bugs": {
     "url": "https://github.com/heikki/spawn-task-experiment/issues"
   },
+  "keywords": [
+    "gulpfriendly",
+    "experiment",
+    "child_process",
+    "worker"
+  ],
   "license": "MIT",
   "dependencies": {
     "async-done": "^1.0.0",
