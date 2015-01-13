@@ -40,4 +40,4 @@ gulp.task('whatever', makeItFaster(function() {
 
 - All wrapped functions need to be self-contained
 - Using worker pool prevents parent process exit, so it might be usable only when watch is running
-- Worker pool starts re-using child processes only after [maxConcurrentWorkers](https://github.com/rvagg/node-worker-farm#options) limit has been reached (default is `cpus().length)
+- Worker pool starts re-using child processes only after [maxConcurrentWorkers](https://github.com/rvagg/node-worker-farm#options) limit has been reached (default is `cpus().length`)
