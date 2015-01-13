@@ -3,8 +3,16 @@
 var gulp = require('gulp');
 var del = require('del');
 
-var spawn = require('./lib/spawn');
-var workerPool = require('./lib/worker-pool');
+var makeItFaster = require('make-it-faster');
+
+makeItFaster.stayAlive({
+	maxCallsPerWorker           : Infinity,
+	maxConcurrentWorkers        : require('os').cpus().length,
+	maxConcurrentCallsPerWorker : 10,
+	maxConcurrentCalls          : Infinity,
+	maxCallTime                 : Infinity,
+	maxRetries                  : Infinity
+});
 
 gulp.task('clean', function(cb) {
 	del(['dest'], cb);
@@ -31,7 +39,7 @@ gulp.task('normal', gulp.series('clean',
 
 // SPAWN
 
-gulp.task('spawn-task', spawn(taskFn));
+gulp.task('spawn-task', makeItFaster(taskFn));
 
 gulp.task('spawn', gulp.series('clean',
 	gulp.parallel('spawn-task', 'spawn-task')
@@ -39,7 +47,7 @@ gulp.task('spawn', gulp.series('clean',
 
 // WORKER POOL
 
-gulp.task('worker-pool-task', workerPool(taskFn));
+gulp.task('worker-pool-task', makeItFaster(taskFn));
 
 gulp.task('worker-pool', gulp.series('clean',
 	gulp.parallel('worker-pool-task', 'worker-pool-task')
