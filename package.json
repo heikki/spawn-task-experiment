@@ -1,6 +1,6 @@
 {
   "name": "spawn-task-experiment",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Tests how fast it is to run gulp tasks in child processes",
   "main": "index.js",
   "scripts": {
