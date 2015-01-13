@@ -1,12 +1,19 @@
 {
   "name": "spawn-task-experiment",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tests how fast it is to run gulp tasks in child processes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Heikki Ylönen",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/heikki/spawn-task-experiment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/heikki/spawn-task-experiment/issues"
+  },
   "license": "MIT",
   "dependencies": {
     "async-done": "^1.0.0",
